@@ -1,3 +1,5 @@
+
+#challenge1
 def multiples_sum(x):
     '''
     (int)-->int
@@ -8,6 +10,7 @@ def multiples_sum(x):
             total_sum=total_sum+i
     return total_sum
 
+#challenge2
 def Fibonacci(f):
     '''
     (int)-->int
@@ -24,7 +27,7 @@ def Fibonacci(f):
 
     return total
 
-
+#challenge3
 def largest_prime_factor(x):
     '''
     (int)-->int
@@ -42,6 +45,7 @@ def largest_prime_factor(x):
 
     return factor
 
+#challenge4
 def largest_palindrome_product():
     '''
     (none)-->int'''
@@ -61,8 +65,26 @@ def is_palindrome(x):
         return True
     else:
         return False
+
+
+#challenge5
+def is_multiple(x,rangeenter):
+    for i in range(2,rangeenter):
+        if x%i!=0:
+            return False
+    return True
+
+
+def smallest_multiple(n):
+    while not is_multiple(n,21):
+        n+=20
+    return n
+    
+
         
-    
-    
+                
+            
+                
+            
     
  
