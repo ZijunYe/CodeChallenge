@@ -79,8 +79,30 @@ def smallest_multiple(n):
     while not is_multiple(n,21):
         n+=20
     return n
-    
 
+
+#challenge6
+def sum_of_squares1(x):
+    square_sum=0
+    sum_square=0
+    for i in range(1,x+1):
+        square_sum=square_sum+i**2
+    for j in range(1,x+1):
+        sum_square=sum_square+j
+        
+    print((sum_square)**2)
+    print(square_sum)
+
+def sum_of_square2(x):
+    #pattern of square of sum (x+1)*(x/2)  --> n*(n+1)/2
+    #pattern of sum of square [(x* (x+1)) *(x+(x+1)) ]/6
+    sum_square=((x+1)*(x/2))
+    square_sum= (((x*(x+1))*(x+(x+1)))/6)
+    print( (sum_square)**2)
+    print(square_sum)
+    print((sum_square)**2 -square_sum)
+        
+        
         
                 
             
