@@ -110,6 +110,8 @@ def prime_number(x):
     # the natural number greater than 1 and not a product of two smaller natural number 
     # ex. 4 =2*2 / 6=2*3 / 8=2*2*2 / 9=3*3
     # the divisor only itself and 1
+    #from small prime factor to larger factor are more eeasy to find
+    # your factor could be constrain from 2-half of number 
     prime=[]
     i=2
     while len(prime)<=x:
