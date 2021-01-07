@@ -103,9 +103,28 @@ def sum_of_square2(x):
     print((sum_square)**2 -square_sum)
         
         
-        
-                
-            
+
+#challenge7
+def prime_number(x):
+    #what is prime number?
+    # the natural number greater than 1 and not a product of two smaller natural number 
+    # ex. 4 =2*2 / 6=2*3 / 8=2*2*2 / 9=3*3
+    # the divisor only itself and 1
+    prime=[]
+    i=2
+    while len(prime)<=x:
+        divisor=[1,i]
+        j=2
+        while len(divisor)<=2 and j<i//2+1:
+            if i%j==0  and j!=i:
+                divisor.append(j)
+            j=j+1
+        if len(divisor)==2:
+            prime.append(i)
+        i=i+1
+                    
+    return prime
+                    
                 
             
     
